@@ -55,7 +55,7 @@ jobs:
       - name: "Passo 6: Acessando Secrets e Vars"
         run: |
           # TODO: Imprima a variavel de repositorio URL_AMBIENTE e o secret API_TOKEN_PROD
-          echo "URL do Ambiente: ${{ secrets.URL_AMBIENTE }}"
+          echo "URL do Ambiente: ${{ vars.URL_AMBIENTE }}"
           echo "API Token (Secret): ${{ secrets.API_TOKEN_PROD }}"
 
           # Pergunta de reflexao:
